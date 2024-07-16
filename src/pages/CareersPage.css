@@ -1,0 +1,93 @@
+.careers-page {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+  }
+  
+  @media (max-width: 1200px) {
+    .categories {
+      justify-content: space-around;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .categories {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .job-card {
+      flex: 0 0 30%;
+    }
+  }
+  
+  .job-card {
+    border: 2px solid #800080;
+    padding: 16px;
+    width: 30%; /* Adjusted width to fit 3 cards in a row */
+    border-radius: 8px;
+    flex: 0 0 25%; /* Adjusted flex basis */
+    margin: 16px 1%;
+  }
+  .apply-button {
+    background-color: #800080;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+  
+  @media (max-width: 768px) {
+    .job-card {
+      width: 90%;
+      margin: 16px auto;
+    }
+  }
+  
+  .job-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .job-location {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .save-icon {
+    cursor: pointer;
+  }
+  
+  .job-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0000FF;
+  }
+  
+  .job-role,
+  .job-description,
+  .job-business-area,
+  .job-experience {
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+  }
+  
+  .job-posted {
+    font-size: 14px;
+    font-weight: normal;
+    color: gray;
+  }
+  
